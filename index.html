@@ -1,1 +1,154 @@
-<h1>Test</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspired Tools for Thoughtful Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfcf9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .product-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .product-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+    .product-card a:hover {
+      background: #333;
+    }
+    .about {
+      max-width: 600px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .lead-magnet {
+      background: #f1f1ec;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .lead-magnet input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      max-width: 90%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .lead-magnet button {
+      padding: 10px 20px;
+      border: none;
+      background: #222;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 40px 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Inspired Tools for Thoughtful Living</h1>
+    <p>Art prints, journaling prompts, and digital keepsakes to nourish your creative spirit.</p>
+  </header>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Writing+Prompts" alt="Writing Prompts">
+      <h3>100 Writing Prompts for Self-Discovery</h3>
+      <p>A beautifully designed prompt pack for journaling and creative growth.</p>
+      <a href="#">Download for $5</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Printable+Art" alt="Printable Art">
+      <h3>Printable Art Set: Soft Rituals</h3>
+      <p>3 calming art prints for mindful spaces—ready to print at home.</p>
+      <a href="#">Get the Set – $7</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Daily+Pages" alt="Daily Pages">
+      <h3>Daily Pages Template Kit</h3>
+      <p>Simple layouts for reflection, intention-setting, and keeping track of what matters.</p>
+      <a href="#">Buy Now – $3</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <p>I make these because I believe slow, intentional creativity is fuel. These tools helped me reconnect with myself—and maybe they'll help you too.</p>
+  </section>
+
+  <section class="lead-magnet">
+    <h3>🎁 Want a free sample?</h3>
+    <p>Get 5 journaling prompts + a printable mini art card—delivered instantly to your inbox.</p>
+    <input type="email" placeholder="Enter your email">
+    <br />
+    <button>Get the Freebie →</button>
+  </section>
+
+  <footer>
+    © 2025 Your Name. Created with love. Powered by Payhip.
+  </footer>
+</body>
+</html>
