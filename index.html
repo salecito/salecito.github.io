@@ -1,5 +1,254 @@
 <!DOCTYPE html>
-<html>
-  <head><title>My First Git Site</title></head>
-  <body><h1>Hello, Git!</h1></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Printable Journaling Prompts & Art Prints | Salecito</title>
+  <meta name="description" content="Salecito offers printable art, journaling prompts, and digital tools for thoughtful, intentional living. Nourish your creativity with beauty and simplicity." />
+  <meta name="keywords" content="printable art, journaling prompts, digital downloads, self-discovery, mindful living, creativity tools" />
+  <meta name="author" content="Salecito" />
+  <meta property="og:title" content="Inspired Tools for Thoughtful Living" />
+  <meta property="og:description" content="Art prints, journaling prompts, and digital keepsakes to nourish your creative spirit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://salecito.com" />
+  <meta property="og:image" content="https://salecito.com/preview.jpg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #f9f8f6;
+      --accent-mauve: #c9b6af;
+      --accent-sage: #cfd5d0;
+      --accent-clay: #e5cfc2;
+      --highlight: #f0e8de;
+      --text-main: #1e1e1e;
+      --text-muted: #555;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-main);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.95rem;
+      }
+    }
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.35em;
+      color: var(--text-main);
+      text-transform: uppercase;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 3.8rem);
+      margin-bottom: 10px;
+      letter-spacing: 4px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.5em;
+    }
+    header p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+    .product-card p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 15px;
+    }
+    .product-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--text-main);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+    .product-card a:hover {
+      background: #333;
+    }
+    .about {
+      max-width: 600px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .lead-magnet {
+      background: var(--accent-sage);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .lead-magnet input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      max-width: 90%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .lead-magnet button {
+      padding: 10px 20px;
+      border: none;
+      background: var(--text-main);
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 40px 20px;
+      color: var(--text-muted);
+    }
+    .social-links a {
+      margin: 0 8px;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: var(--text-main);
+    }
+    .blog-section {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      border-top: 1px solid #eee;
+    }
+    .blog-section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .blog-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <div class="logo">SALECITO</div>
+    <nav>
+      <a href="#products" title="View Products">Products</a>
+      <a href="#blog" title="Read Our Blog">Blog</a>
+      <a href="#contact" title="Contact Us">Contact</a>
+    </nav>
+  </div>
+
+  <header>
+    <h1><span>Journaling Prompts<br>& Art Prints</span></h1>
+    <p>Art prints, journaling prompts, and digital keepsakes to nourish your creative spirit.</p>
+  </header>
+
+  <section id="products" class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Writing+Prompts" alt="100 Writing Prompts">
+      <h3>100 Writing Prompts for Self-Discovery</h3>
+      <p>A beautifully designed prompt pack for journaling and creative growth.</p>
+      <a href="#" title="Coming soon: Writing Prompts">Coming Soon</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Printable+Art" alt="Printable Art Set">
+      <h3>Printable Art Set: Soft Rituals</h3>
+      <p>3 calming art prints for mindful spaces—ready to print at home.</p>
+      <a href="#" title="Coming soon: Art Set">Coming Soon</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Daily+Pages" alt="Daily Pages Template Kit">
+      <h3>Daily Pages Template Kit</h3>
+      <p>Simple layouts for reflection, intention-setting, and keeping track of what matters.</p>
+      <a href="#" title="Coming soon: Daily Pages Kit">Coming Soon</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <p>I make these because I believe slow, intentional creativity is fuel. These tools helped me reconnect with myself—and maybe they'll help you too.</p>
+  </section>
+
+  <section class="lead-magnet" id="contact">
+    <h3>🏡 Want a free sample?</h3>
+    <p>Get 5 journaling prompts + a printable mini art card—delivered instantly to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" aria-label="Email address">
+      <br />
+      <button type="submit" title="Subscribe for freebie">Get the Freebie →</button>
+    </form>
+  </section>
+
+  <section class="blog-section" id="blog">
+    <h2>Blog</h2>
+    <p>Coming soon: reflections, rituals, and thoughts on slow, creative living. Stay tuned.</p>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" aria-label="YouTube" title="Follow us on YouTube">YouTube</a>
+      <a href="#" aria-label="Instagram" title="Follow us on Instagram">Instagram</a>
+      <a href="#" aria-label="Pinterest" title="Follow us on Pinterest">Pinterest</a>
+    </div>
+    <p>© 2025 Salecito. Created with love. Powered by Payhip.</p>
+  </footer>
+</body>
 </html>
