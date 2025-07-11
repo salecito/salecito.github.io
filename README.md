@@ -4,7 +4,7 @@ Welcome. This repository powers *My Digital Journey* — a space where I share j
 
 Whether you're building a journaling habit or exploring new ways to connect with yourself, this site is here to support your process.
 
-**Live Site:** [https://salecito.github.io/](https://salecito.github.io/)  
+**Live Site:** [https://salecito.com](https://salecito.com)  
 
 ---
 
