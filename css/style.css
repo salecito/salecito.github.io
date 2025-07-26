@@ -1,0 +1,286 @@
+    /* 
+Salecito Handwritten Font
+Copyright © 2025 Salecito.com – All Rights Reserved
+Not licensed for reuse without written permission.
+*/
+
+    @font-face {
+        font-family: Salecito;
+        src: url(../fonts/Salecito.ttf);
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    :root {
+        --bg-moss: #a08a85;
+        --accent-alabaster: #f7f3e9;
+        --bg-blush: #c2a8a4;
+        --bg-terms-light: #D2D5D7;
+        --bg-terms: #bfbfbf;
+        --text-main: #343330;
+        --text-muted: #707069;
+        --buttons: 109, 92, 88;
+        --shadow: #8c7a75;
+        --terms-shadow: #A1A1A1;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        background-color: var(--bg-moss);
+        color: var(--text-main);
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .terms {
+        background-color: var(--bg-terms);
+    }
+
+    .logo-bar {
+        display: flex;
+        align-items: center;
+        padding: 60px 0 20px 80px;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .logo-bar a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: var(--text-main);
+        transition: color 0.3s ease;
+    }
+
+    .logo-bar a:hover {
+        color: var(--accent-alabaster);
+    }
+
+    .logo {
+        height: 36px;
+        margin-right: 12px;
+    }
+
+    .logo-bar span {
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        padding-top: 6px;
+    }
+
+    .container {
+        display: flex;
+        background-color: var(--bg-blush);
+        flex-direction: column;
+        max-width: 2400px;
+        margin: 0 auto;
+        min-height: 100vh;
+        padding: 120px 5%;
+        /* leave space for logo bar */
+        position: relative;
+        z-index: 1;
+        filter: drop-shadow(0px 1px 8px var(--shadow));
+    }
+
+    .terms .container {
+        background-color: var(--bg-terms-light);
+        width: 100%;
+        min-height: 100vh;
+        padding: 120px 5%;
+        /* leave space for logo bar */
+        position: relative;
+        z-index: 1;
+        filter: drop-shadow(0px 1px 8px var(--terms-shadow));
+    }
+
+    .terms .wrapper {
+        max-width: 900px;
+        margin: 4em auto;
+        padding: 0 5%;
+    }
+
+    .terms ul li,
+    .terms p {
+        font-size: 1.3rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+    .hero {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .text {
+        flex: 1;
+        min-width: 330px;
+        max-width: 1000px;
+    }
+
+    .text h1,
+    h1 {
+        font-family: Salecito;
+        font-size: clamp(2.5rem, 6vw, 3.8rem);
+        margin-bottom: 10px;
+        font-weight: normal;
+        line-height: 1.5em;
+        margin-bottom: 1.5rem;
+    }
+
+    .text h1 span {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        line-height: 1.6;
+        margin-bottom: 4.5rem;
+    }
+
+    .follow {
+        line-height: 1.8em;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        margin-bottom: 1.5rem;
+    }
+
+    .socials {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .socials a {
+        display: inline-flex;
+        width: 22vw;
+        height: 22vw;
+        max-width: 100px;
+        max-height: 100px;
+        color: var(--text-main);
+        background-color: rgba(var(--buttons), 0.2);
+        border-radius: 99px;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.5s, color 0.2s;
+    }
+
+    .socials a:hover {
+        background-color: rgba(var(--buttons), 1);
+        color: var(--accent-alabaster);
+    }
+
+    .socials svg {
+        width: calc(22vw - 10.5vw);
+        height: calc(22vw - 4vw);
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .image {
+        flex: 1;
+        max-width: 800px;
+        min-width: 600px;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 40vw;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        .text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .text h1 {
+            font-size: 2rem;
+        }
+
+        .text p {
+            font-size: 1rem;
+        }
+
+        .image {
+            min-width: 100%;
+            text-align: center;
+        }
+
+        .logo-bar {
+            padding: 60px 0 20px 10%;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .image img {
+            max-width: 50vw;
+        }
+    }
+
+    .terms p svg {
+        width: 36px;
+        margin: -6px 6px;
+    }
+
+    .arrow {
+        font-family: Salecito;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer .fixed {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
+
+    .footer span {
+        padding-right: 6px;
+    }
+
+    .footer a,
+    .terms a {
+        color: var(--text-main);
+        text-decoration: none;
+        padding-right: 6px;
+        transition: color 0.5s;
+    }
+
+    .footer a:hover,
+    .terms a:hover {
+        color: var(--accent-alabaster);
+    }

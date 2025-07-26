@@ -1,254 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Printable Journaling Prompts & Art Prints | Salecito</title>
-  <meta name="description" content="Salecito offers printable art, journaling prompts, and digital tools for thoughtful, intentional living. Nourish your creativity with beauty and simplicity." />
-  <meta name="keywords" content="printable art, journaling prompts, digital downloads, self-discovery, mindful living, creativity tools" />
-  <meta name="author" content="Salecito" />
-  <meta property="og:title" content="Inspired Tools for Thoughtful Living" />
-  <meta property="og:description" content="Art prints, journaling prompts, and digital keepsakes to nourish your creative spirit." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://salecito.com" />
-  <meta property="og:image" content="https://salecito.com/preview.jpg" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-light: #f9f8f6;
-      --accent-mauve: #c9b6af;
-      --accent-sage: #cfd5d0;
-      --accent-clay: #e5cfc2;
-      --highlight: #f0e8de;
-      --text-main: #1e1e1e;
-      --text-muted: #555;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-light);
-      color: var(--text-main);
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.95rem;
-      }
-    }
-    .top-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .logo {
-      font-weight: 700;
-      font-size: 1.25rem;
-      letter-spacing: 0.35em;
-      color: var(--text-main);
-      text-transform: uppercase;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: var(--text-main);
-      font-weight: 400;
-      font-size: 1rem;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-    header h1 {
-      font-size: clamp(2.5rem, 6vw, 3.8rem);
-      margin-bottom: 10px;
-      letter-spacing: 4px;
-      font-weight: 400;
-      text-transform: uppercase;
-      line-height: 1.5em;
-    }
-    header p {
-      font-size: 1.4rem;
-      font-weight: 300;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .product-card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-    .product-card h3 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      line-height: 1.4;
-      letter-spacing: 0.02em;
-      margin-bottom: 10px;
-    }
-    .product-card p {
-      font-size: 1rem;
-      color: var(--text-muted);
-      margin-bottom: 15px;
-    }
-    .product-card a {
-      display: inline-block;
-      padding: 10px 20px;
-      background: var(--text-main);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.2s ease;
-    }
-    .product-card a:hover {
-      background: #333;
-    }
-    .about {
-      max-width: 600px;
-      margin: 60px auto;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .lead-magnet {
-      background: var(--accent-sage);
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .lead-magnet input[type="email"] {
-      padding: 10px;
-      width: 250px;
-      max-width: 90%;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-    }
-    .lead-magnet button {
-      padding: 10px 20px;
-      border: none;
-      background: var(--text-main);
-      color: #fff;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 40px 20px;
-      color: var(--text-muted);
-    }
-    .social-links a {
-      margin: 0 8px;
-      color: var(--text-muted);
-      text-decoration: none;
-    }
-    .social-links a:hover {
-      color: var(--text-main);
-    }
-    .blog-section {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      border-top: 1px solid #eee;
-    }
-    .blog-section h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-    .blog-section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--text-muted);
-    }
-  </style>
-</head>
-<body>
-  <div class="top-nav">
-    <div class="logo">SALECITO</div>
-    <nav>
-      <a href="#products" title="View Products">Products</a>
-      <a href="#blog" title="Read Our Blog">Blog</a>
-      <a href="#contact" title="Contact Us">Contact</a>
-    </nav>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salecito – Coming Soon</title>
 
-  <header>
-    <h1><span>Journaling Prompts<br>& Art Prints</span></h1>
-    <p>Art prints, journaling prompts, and digital keepsakes to nourish your creative spirit.</p>
-  </header>
+    <!-- ADDITION: SEO Meta -->
+    <meta
+      name="description"
+      content="Salecito is a cozy digital space for journaling, reflection, and creative tools. We’re launching soon — follow us for updates!"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Salecito" />
+    <meta
+      name="keywords"
+      content="Salecito, journaling, digital tools, reflection, mindfulness, writing prompts, creative space"
+    />
 
-  <section id="products" class="products">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Writing+Prompts" alt="100 Writing Prompts">
-      <h3>100 Writing Prompts for Self-Discovery</h3>
-      <p>A beautifully designed prompt pack for journaling and creative growth.</p>
-      <a href="#" title="Coming soon: Writing Prompts">Coming Soon</a>
+    <!-- ADDITION: Open Graph (for social previews) -->
+    <meta
+      property="og:title"
+      content="Salecito – A Digital Space for Journaling &amp; Reflection"
+    />
+    <meta
+      property="og:description"
+      content="We’re launching soon — follow us for updates and inspiration!"
+    />
+    <meta
+      property="og:image"
+      content="https://salecito.com/assets/salecito-young-woman-journaling.png"
+    />
+    <meta property="og:url" content="https://salecito.com" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Logo Top Left -->
+    <div class="logo-bar">
+      <a href="https://www.salecito.com">
+        <svg
+          class="logo"
+          viewBox="0 0 57 58"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          aria-label="Salecito logo"
+          role="img"
+        >
+          <path
+            d="M47.66,27a26,26,0,1,0,26,26A26,26,0,0,0,47.66,27Zm0,50a24,24,0,1,1,24-24A24,24,0,0,1,47.66,77Z"
+            transform="translate(-21.66 -20.99)"
+          />
+          <circle cx="52" cy="5" r="5" />
+          <circle cx="30" cy="26" r="5" />
+        </svg>
+        <span>SALECITO</span>
+      </a>
     </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Printable+Art" alt="Printable Art Set">
-      <h3>Printable Art Set: Soft Rituals</h3>
-      <p>3 calming art prints for mindful spaces—ready to print at home.</p>
-      <a href="#" title="Coming soon: Art Set">Coming Soon</a>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="hero">
+        <div class="text">
+          <h1>
+            <span class="w">Welcome</span>
+            <span class="s"> to Salecito</span>
+          </h1>
+          <p>
+            A warm corner for journaling, self-reflection, and beautiful digital
+            tools. We’re launching soon — and we’d love for you to join the
+            journey.
+          </p>
+
+          <div class="follow">Follow us for updates:</div>
+          <div class="socials">
+            <a
+              href="https://www.youtube.com/@salecito"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <svg
+                class="youtube"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 170.39 120.71"
+                fill="currentColor"
+              >
+                <path
+                  d="M163.34,69c-42.57-1.24-27.66-1.57-70.59,0s-49.9,6.58-49.9,46.91v25.51c0,37.86,4.83,46.31,49.9,46.9s33.89.26,70.59,0,49.9-3.85,49.9-46.9V115.93C213.27,74.42,205.9,70.27,163.34,69Zm-53,85.6V103.19l44.54,25.71Z"
+                  transform="translate(-42.85 -67.96)"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/hellosalecito"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 139.32 139.32"
+                fill="currentColor"
+                class="instagram"
+              >
+                <path
+                  d="M157.23,58.53H98.89A40.54,40.54,0,0,0,58.4,99v58.34a40.54,40.54,0,0,0,40.49,40.49h58.34a40.53,40.53,0,0,0,40.49-40.49V99A40.54,40.54,0,0,0,157.23,58.53Zm28.49,98.83a28.52,28.52,0,0,1-28.49,28.49H98.89A28.52,28.52,0,0,1,70.4,157.36V99A28.52,28.52,0,0,1,98.89,70.53h58.34A28.52,28.52,0,0,1,185.72,99Z"
+                  transform="translate(-58.4 -58.53)"
+                />
+                <path
+                  d="M128.06,92.68a35.52,35.52,0,1,0,35.52,35.51A35.55,35.55,0,0,0,128.06,92.68Zm0,59a23.52,23.52,0,1,1,23.52-23.52A23.54,23.54,0,0,1,128.06,151.71Z"
+                  transform="translate(-58.4 -58.53)"
+                />
+                <path
+                  d="M163.64,82.68a8,8,0,1,0,9.47,9.47A8,8,0,0,0,163.64,82.68Z"
+                  transform="translate(-58.4 -58.53)"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.pinterest.com/hellosalecito"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pinterest"
+            >
+              <svg
+                class="pinterest"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 121.45 156.1"
+                fill="currentColor"
+              >
+                <path
+                  d="M92.12,128.77c1.62,2.37-1.57,13.15-4,13.09-11.7-.3-24.4-19.85-19.66-43.7C74.27,68.72,97.35,59.84,103.68,57c7.45-3.38,34.78-10.76,56.29,1.19,24,13.33,26.46,32.93,27.49,38.66,5,27.78-3.81,46.63-21.12,58.82-29,20.44-48.15-.45-48.44-2.82-9.34,42.82-23.17,57.36-24.11,54.55-4.6-13.63-2.62-33.78,11.52-83.73-9.41-27.88,5.34-37.33,14.81-37.33a12.21,12.21,0,0,1,5.17,1.35c15.72,7.68-4.67,38.64-1.61,49.22,8.6,29.69,47.42,1.45,41.79-41.08-4.1-31-36.91-33.49-56.61-25C90.64,78.56,76.12,105.42,92.12,128.77Z"
+                  transform="translate(-67.4 -51.6)"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="image">
+          <img
+            src="assets/salecito-young-woman-journaling.png"
+            alt="Illustration of woman journaling"
+          />
+        </div>
+      </div>
     </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Daily+Pages" alt="Daily Pages Template Kit">
-      <h3>Daily Pages Template Kit</h3>
-      <p>Simple layouts for reflection, intention-setting, and keeping track of what matters.</p>
-      <a href="#" title="Coming soon: Daily Pages Kit">Coming Soon</a>
+    <div class="footer">
+      <div class="fixed">
+        © <span id="year">2025</span
+        ><a href="https://www.salecito.com">Salecito.</a>All rights reserved. |<a href="terms.html"> Term of Use</a>|<a href="privacy.html"> Privacy Poicy</a>
+      </div>
     </div>
-  </section>
-
-  <section class="about">
-    <p>I make these because I believe slow, intentional creativity is fuel. These tools helped me reconnect with myself—and maybe they'll help you too.</p>
-  </section>
-
-  <section class="lead-magnet" id="contact">
-    <h3>🏡 Want a free sample?</h3>
-    <p>Get 5 journaling prompts + a printable mini art card—delivered instantly to your inbox.</p>
-    <form>
-      <input type="email" placeholder="Enter your email" aria-label="Email address">
-      <br />
-      <button type="submit" title="Subscribe for freebie">Get the Freebie →</button>
-    </form>
-  </section>
-
-  <section class="blog-section" id="blog">
-    <h2>Blog</h2>
-    <p>Coming soon: reflections, rituals, and thoughts on slow, creative living. Stay tuned.</p>
-  </section>
-
-  <footer>
-    <div class="social-links">
-      <a href="#" aria-label="YouTube" title="Follow us on YouTube">YouTube</a>
-      <a href="#" aria-label="Instagram" title="Follow us on Instagram">Instagram</a>
-      <a href="#" aria-label="Pinterest" title="Follow us on Pinterest">Pinterest</a>
-    </div>
-    <p>© 2025 Salecito. Created with love. Powered by Payhip.</p>
-  </footer>
-</body>
+    <script>
+      // Insert current year automatically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
