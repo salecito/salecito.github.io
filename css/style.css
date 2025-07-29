@@ -18,7 +18,7 @@ Not licensed for reuse without written permission.
         --bg-blush: #c2a8a4;
         --bg-terms-light: #D2D5D7;
         --bg-terms: #bfbfbf;
-        --text-main: #343330;
+        --text-main: #343130;
         --text-muted: #707069;
         --buttons: 109, 92, 88;
         --shadow: #8c7a75;
@@ -46,12 +46,16 @@ Not licensed for reuse without written permission.
     .logo-bar {
         display: flex;
         align-items: center;
-        padding: 60px 0 20px 80px;
+        padding: 30px 0 20px 80px;
         position: absolute;
         z-index: 10;
     }
 
     .logo-bar a {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -64,15 +68,16 @@ Not licensed for reuse without written permission.
     }
 
     .logo {
-        height: 36px;
-        margin-right: 12px;
+        width: 52px;
+        height: 30px;
+        margin-left: 30px;
     }
 
     .logo-bar span {
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 0.3rem;
-        padding-top: 6px;
+        font-size: 1.18rem;
+        font-weight: 400;
+        letter-spacing: 0.391rem;
+        padding-top: .11rem;
     }
 
     .container {
