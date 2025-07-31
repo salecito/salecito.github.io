@@ -527,15 +527,15 @@ h1 {
 }
 
 .grow {
-  animation: grow 1s ease-in-out 0.01s forwards;
+  animation: grow 1s ease-in-out .01s forwards;
 }
 
 .grow1 {
-  animation: grow 1s ease-in-out 0.015s forwards;
+  animation: grow 1s ease-in-out 0.15s forwards;
 }
 
 .grow2 {
-  animation: grow 1bs ease-in-out .03s forwards;
+  animation: grow 1s ease-in-out 0.3s forwards;
 }
 
 /* media Queries*/
@@ -730,8 +730,8 @@ h1 {
   }
 
   .image img {
-  max-height: 70vh;
-}
+    max-height: 70vh;
+  }
 }
 
 @media (max-width: 1280px) {
