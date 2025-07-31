@@ -39,6 +39,7 @@ body {
   position: relative;
   color: var(--text-main);
   text-align: justify;
+  overflow-x: hidden;
 }
 
 html,
@@ -676,6 +677,7 @@ h1 {
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
+
   .logo-bar {
     padding: 60px 0 0 40px;
   }
@@ -726,12 +728,9 @@ h1 {
   }
 }
 
-@media (min-width: 1281px) {
-  .logo-bar {
-    padding: 60px 0 0 40px;
-  }
-  .image img {
-    max-height: 70vh;
+@media (max-width: 1280px) {
+  body {
+    text-align: center;
   }
 }
 
