@@ -90,7 +90,7 @@ html,
   display: flex;
   flex-direction: column;
   background-color: var(--bg-pearl);
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   min-height: 100vh;
   padding: 120px 5% 60px 5%;
@@ -101,7 +101,7 @@ html,
 
 .terms .container {
   background-color: var(--bg-terms-light);
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   padding: 120px 5%;
   position: relative;
